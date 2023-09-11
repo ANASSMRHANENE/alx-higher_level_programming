@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-def new_in_list(my_list, idx, element):
-    def no_c(my_string):
-    newstring = ""
-    for c in my_string:
-        if c not in "Cc":
-            newstring += c
-    return newstring
+def no_c(my_string):
+    new_string = ""
+    for char in my_string:
+        if char not in ['c', 'C']:
+            new_string += char
+    return new_string
