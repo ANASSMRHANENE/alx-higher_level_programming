@@ -4,18 +4,18 @@ import sys
 if __name__ != "__main__":
     exit()
 
-Str = "{:d} argument"
-arg = len(sys.argv) - 1
-if arg == 0:
-    Str += 's.'
-elif arg == 1:
-    Str += ':'
+argStr = "{:d} argument"
+argc = len(sys.argv) - 1
+if argc == 0:
+    argStr += 's.'
+elif argc == 1:
+    argStr += ':'
 else:
-    Str += 's:'
-print(Str.format(arg))
+    argStr += 's:'
+print(argStr.format(argc))
 
-j = 0
-for arg1 in sys.argv:
-    if j != 0:
-        print("{:d}: {:s}".format(j, arg1))
-    j += 1
+i = 0
+for arg in sys.argv:
+    if i != 0:
+        print("{:d}: {:s}".format(i, arg))
+    i += 1
