@@ -3,7 +3,9 @@
 
 
 class Rectangle:
-    """
+    """Representation of  rectangle
+    Attributes:
+        number_of_instances (int): The number of Rectangle instances.
     """
 
     number_of_instances = 0
@@ -33,7 +35,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """ the height of the Rectangle."""
+        """the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -45,11 +47,11 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Return area of Rectangle."""
+        """ """
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """the perimeter of Rectangle."""
+        """ """
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
@@ -68,7 +70,7 @@ class Rectangle:
         return ("".join(rect))
 
     def __repr__(self):
-        """ """
+        """."""
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
