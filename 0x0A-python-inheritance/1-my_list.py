@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" 0x0A. task 1 """
+""" 0x0A. Python - Inheritance, task 1 """
 
 
 class MyList(list):
-    """Custom list
+    """Custom list type intended to only contain integers.
 
     """
 
